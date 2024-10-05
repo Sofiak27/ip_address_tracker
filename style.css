@@ -1,0 +1,110 @@
+@import url('https://fonts.google.com/specimen/Rubik');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.top-data {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-img {
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    height: 40vh;
+}
+
+.title, .search, .displayed-data {
+    position: absolute;
+}
+
+.displayed-data {
+    z-index: 1000;
+}
+
+.title {
+    margin-top: 0;
+    color: white;
+    top: 2rem;
+}
+
+.search {
+    top: 5.5rem;
+    display: flex;
+}
+
+.search input {
+    border: 1px solid black;
+    padding: 1rem;
+    min-width: 50vw;
+    border-radius: 0.8rem 0 0 0.8rem;
+    font-size: 18px;
+    margin: 0;
+    border-right: none;
+}
+
+.search button {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    width: 3rem;
+    border-radius: 0 0.8rem 0.8rem 0;
+    border-left: none; 
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.displayed-data {
+    top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.7rem;
+    width: 80%;
+}
+
+.data-section {
+    margin-right: 2rem;
+    line-height: 1.5;
+}
+
+.data-section p {
+    font-weight: 800;
+    font-size: 0.7rem;
+    color: gray;
+    margin-bottom: 0.3rem;
+}
+
+.data-section h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#map {
+    height: 100vh;
+}
+
+@media (max-width: 472px) {
+    .displayed-data {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+    }
+}
